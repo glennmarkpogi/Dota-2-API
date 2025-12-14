@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dota Hero Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png" alt="Dota 2 Logo" class="header-logo">
+      <div class="search-bar">
+        <input 
+          type="text" 
+          id="hero-search" 
+          placeholder="Search hero..." 
+          autocomplete="off"
+        />
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="*">All</button>
+        <button class="filter-btn str" data-filter="str">Strength</button>
+        <button class="filter-btn agi" data-filter="agi">Agility</button>
+        <button class="filter-btn int" data-filter="int">Intelligence</button>
+        <button class="filter-btn uni" data-filter="all">Universal</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="hero-container">
+    <!-- Hero Cards Injected Here -->
+  </main>
+
+  <!-- Hero Details Modal -->
+  <div id="hero-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-body">
+        <div class="modal-image-wrapper">
+          <img id="modal-hero-img" src="" alt="Hero Image">
+        </div>
+        <div class="modal-info">
+          <h2 id="modal-hero-name"></h2>
+          <p id="modal-hero-attr" class="modal-subtitle"></p>
+          
+          <div class="modal-section">
+            <h3>Roles</h3>
+            <div id="modal-hero-roles" class="hero-roles"></div>
+          </div>
+
+          <div class="modal-section">
+            <h3>Stats</h3>
+            <div class="modal-stats-grid">
+              <div class="stat-box str">
+                <span class="stat-label">STR</span>
+                <span id="modal-str" class="stat-val"></span>
+              </div>
+              <div class="stat-box agi">
+                <span class="stat-label">AGI</span>
+                <span id="modal-agi" class="stat-val"></span>
+              </div>
+              <div class="stat-box int">
+                <span class="stat-label">INT</span>
+                <span id="modal-int" class="stat-val"></span>
+              </div>
+            </div>
+            <div class="modal-extra-stats">
+                <p>Attack: <span id="modal-attack"></span></p>
+                <p>Speed: <span id="modal-speed"></span></p>
+            </div>
+          </div>
+
+          <div class="modal-section">
+            <h3>Abilities</h3>
+            <div id="modal-hero-abilities" class="abilities-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tooltip -->
+  <div id="ability-tooltip" class="tooltip hidden">
+    <h4 id="tooltip-title"></h4>
+    <p id="tooltip-desc"></p>
+  </div>
+
+  <template id="hero-card-template">
+    <div class="hero-card">
+      <div class="hero-image">
+        <img class="hero-main-img" src="" alt="Hero image" loading="lazy">
+        <span class="hero-attr-badge"></span>
+      </div>
+      <div class="hero-details">
+        <div class="hero-header">
+          <h2 class="hero-name"></h2>
+          <span class="hero-attack-type"></span>
+        </div>
+        <div class="hero-roles"></div>
+        <div class="hero-stats-row">
+            <div class="stat-item stat-str">
+                <span class="label">STR</span>
+                <span class="val-str"></span>
+            </div>
+            <div class="stat-item stat-agi">
+                <span class="label">AGI</span>
+                <span class="val-agi"></span>
+            </div>
+            <div class="stat-item stat-int">
+                <span class="label">INT</span>
+                <span class="val-int"></span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
