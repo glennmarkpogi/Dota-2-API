@@ -1,4 +1,4 @@
-# Dota Hero Explorer
+# Dota 2 Heroes
 
 A web application for exploring Dota 2 heroes, utilizing the OpenDota API to fetch and display hero data.
 
@@ -59,3 +59,4 @@ A web application for exploring Dota 2 heroes, utilizing the OpenDota API to fet
 3.  Click the attribute buttons to filter the list of heroes.
 4.  Click the "Heart" icon to save a hero to favorites.
 5.  Click on any hero card to see more details.
+
