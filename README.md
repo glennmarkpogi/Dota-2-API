@@ -1,24 +1,71 @@
-# Dota 2 Heroes
+
+# 🦸‍♂️ Dota Hero Explorer
 
 A web application for exploring Dota 2 heroes, utilizing the OpenDota API to fetch and display hero data.
 
-## API Documentation
+## 🚀 Features
 
-### 1. Base URL
-`https://api.opendota.com/api`
+- **Hero Search**: Quickly find heroes by name.
+- **Attribute Filtering**: Filter heroes by their primary attribute (Strength, Agility, Intelligence, Universal).
+- **Favorites**: Save your favorite heroes (stored in LocalStorage).
+- **Detailed View**: Click on a hero card to view detailed information in a modal.
+- **Dark/Light Mode**: Toggle between themes.
+- **Responsive Grid**: Hero cards are displayed in a responsive grid layout.
 
-### 2. Endpoints
--   **Hero Stats**: `/heroStats` - Fetches base stats for all heroes.
--   **Hero Abilities**: `/constants/hero_abilities` - Fetches ability mapping for heroes.
--   **All Abilities**: `/constants/abilities` - Fetches detailed ability data.
+## 🛠️ Technologies Used
 
-### 3. Required Parameters
--   None required for these endpoints (fetches all data).
+- HTML5
+- CSS3
+- JavaScript
+- OpenDota API
 
-### 4. Authentication
--   **Type**: None (OpenDota Free Tier)
+## 📦 Installation
 
-### 5. Sample JSON Response (Hero Stats)
+1. **Clone the repository**
+  ```sh
+  git clone https://github.com/your-username/your-repo-name.git
+  ```
+2. **Navigate to the project folder**
+  ```sh
+  cd Elect_FInal_Projects/Dotae_Api
+  ```
+3. **Open `index.html` in your web browser**
+  - Double-click `index.html` or right-click and select “Open with” > your browser.
+
+## 🖥️ How to Use
+
+1. Open `index.html` in your web browser.
+2. Use the search bar to find a specific hero.
+3. Click the attribute buttons to filter the list of heroes.
+4. Click the "Heart" icon to save a hero to favorites.
+5. Click on any hero card to see more details.
+
+## 📄 License
+
+This project is open source and free to use.
+
+## 🙏 Credits
+
+Created by Glenn Mark, December 2025.
+
+---
+
+## 📚 API Reference (OpenDota)
+
+**Base URL:** `https://api.opendota.com/api`
+
+**Endpoints:**
+- `/heroStats` — Fetches base stats for all heroes
+- `/constants/hero_abilities` — Fetches ability mapping for heroes
+- `/constants/abilities` — Fetches detailed ability data
+
+**Required Parameters:**
+- None required for these endpoints (fetches all data)
+
+**Authentication:**
+- None (OpenDota Free Tier)
+
+**Sample JSON Response (Hero Stats):**
 ```json
 {
   "id": 1,
@@ -35,28 +82,3 @@ A web application for exploring Dota 2 heroes, utilizing the OpenDota API to fet
   "base_int": 12
 }
 ```
-
-## Features
-
--   **Hero Search**: Quickly find heroes by name.
--   **Attribute Filtering**: Filter heroes by their primary attribute (Strength, Agility, Intelligence, Universal).
--   **Favorites**: Save your favorite heroes (stored in LocalStorage).
--   **Detailed View**: Click on a hero card to view detailed information in a modal.
--   **Dark/Light Mode**: Toggle between themes.
--   **Responsive Grid**: Hero cards are displayed in a responsive grid layout.
-
-## Technologies Used
-
--   HTML5
--   CSS3
--   JavaScript
--   OpenDota API
-
-## How to Use
-
-1.  Open `index.html` in your web browser.
-2.  Use the search bar to find a specific hero.
-3.  Click the attribute buttons to filter the list of heroes.
-4.  Click the "Heart" icon to save a hero to favorites.
-5.  Click on any hero card to see more details.
-
