@@ -1,5 +1,5 @@
 
-# 🦸‍♂️ Dota Hero Explorer
+# 🦸‍♂️ Dota 2 Heroes
 
 A web application for exploring Dota 2 heroes, utilizing the OpenDota API to fetch and display hero data.
 
@@ -23,7 +23,7 @@ A web application for exploring Dota 2 heroes, utilizing the OpenDota API to fet
 
 1. **Clone the repository**
   ```sh
-  git clone https://github.com/your-username/your-repo-name.git
+  git clone https://github.com/glennmarkpogi/Dota-2-API.git
   ```
 2. **Navigate to the project folder**
   ```sh
@@ -82,3 +82,4 @@ Created by Glenn Mark, December 2025.
   "base_int": 12
 }
 ```
+
